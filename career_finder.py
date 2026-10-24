@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+from minimax_support import load_env, analyze
 
 ROOT = Path(__file__).resolve().parent
 FOCUS = {'complaints': '客户投诉与现场闭环', 'hardware': '硬件可靠性与失效分析', 'software': '软件及系统交付质量'}
@@ -136,6 +137,8 @@ def markdown(r):
     lines = ['# Career Finder · 岗位学习与认证搜索', '', f'画像：{p["company"]} / {p["role"]} / {p["industry"]}', f'工作主线：{"、".join(FOCUS[x] for x in p["focus"])}', f'生成：{r["generated_on"]}；来源核验：{r["evidence_checked_on"]}', f'运行模式：{r["mode"]}；成功在线查询：{r["completed_queries"]}', '', '框架与优先级是基于公开资料的编辑建议，不是公司内部岗位标准，也不代表雇主认可某证书。尚缺：工作年限、学历、预算、英语水平、内部职责与考证报销政策。', '岗位 CQE = 客户质量工程师；ASQ CQE = Certified Quality Engineer，两者不得混同。', '建议先完成真实问题的证据链和改善成果，再按工作任务选择证书；不以证书数量衡量能力。', '']
     if r['warnings']:
         lines += ['## 需要注意', ''] + ['- ' + w for w in r['warnings']] + ['']
+    if r.get('ai_analysis'):
+        lines += ['## MiniMax 行动建议（AI 生成，未经人工核验）', '', r['ai_analysis'], '']
     sources = {s['id']: s for s in r['sources']}
     def links(ids):
         return '；'.join(f'[{sources[s]["organization"]}：{sources[s]["title_zh"]}]({sources[s]["url"]})' for s in ids if s in sources)
@@ -203,10 +206,12 @@ def main():
     parser.add_argument('--role')
     parser.add_argument('--industry')
     parser.add_argument('--online', action='store_true', help='调用 Brave Search API，需要自备密钥')
+    parser.add_argument('--no-ai', action='store_true', help='跳过 MiniMax 调用，不产生模型费用')
     parser.add_argument('--query-limit', type=int, choices=range(1, 8), default=3)
     parser.add_argument('--output', type=Path, default=ROOT / 'reports/latest')
     args = parser.parse_args()
     try:
+        load_env(ROOT / '.env')
         custom = [args.company, args.role, args.industry]
         if args.profile and any(custom):
             raise ValueError('--profile 不可与三个画像参数混用')
@@ -217,6 +222,12 @@ def main():
         else:
             profile = json.loads((args.profile or ROOT / 'examples/supcon-cqe.json').read_text(encoding='utf-8'))
         report = build_report(profile, args.online, limit=args.query_limit)
+        if not args.no_ai:
+            analysis, warning = analyze(report)
+            if analysis:
+                report['ai_analysis'] = analysis
+            if warning:
+                report['warnings'].append(warning)
         text = markdown(report)
         base = args.output
         base.parent.mkdir(parents=True, exist_ok=True)

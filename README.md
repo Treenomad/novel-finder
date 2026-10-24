@@ -62,3 +62,24 @@ python3 -m unittest discover -s tests -v
 ```
 
 见 [验证记录](docs/verification.md)。资料在 `data/automation_quality.json`，核验日期为 2026-10-24；历史代码仍在 Git 历史中。在线接口用固定响应测试，未使用真实付费密钥调用，不将模拟测试写成实时 API 验证成功。
+
+## 本地 MiniMax 配置
+
+程序启动时自动读取**项目目录**下的 `.env`。配置模板见 `.env.example`；复制后填写自己的密钥。真实 `.env` 不随仓库分发，不能上传；已有系统环境变量优先于 `.env`。
+
+```dotenv
+MINIMAX_API_KEY=在本机填写你的密钥
+MINIMAX_MODEL=MiniMax-M3.1-Flash
+MINIMAX_API_URL=https://api.minimax.cn/v1/chat/completions
+```
+
+配置后，原来的命令和 Mac 双击入口都会自动调用 MiniMax，为已有资料补充一段行动建议：
+
+```sh
+python3 career_finder.py
+python3 career_finder.py --no-ai   # 仅生成资料报告，不调用模型
+```
+
+每次默认最多一次模型调用，可能按服务商规则计费；生成上限设为 4096 tokens。只有岗位画像、已有公开资料和搜索线索会发给 MiniMax，不上传密钥文件或其他本地文件。模型建议单独标明“AI 生成，未经人工核验”，不冒充新搜索结果或资格核验。调用失败时保留资料报告并显示提示。
+
+MiniMax 是文本分析服务，本配置不替代 Brave 搜索密钥。自动检索新网页仍需单独配置 `BRAVE_SEARCH_API_KEY`。密钥轮换时只需编辑本机 `.env`，无需修改 GitHub 代码。官方接口文档：https://platform.minimax.cn/docs/api-reference/text-chat-openai

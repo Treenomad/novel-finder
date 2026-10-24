@@ -4,3 +4,5 @@ downloads/
 .venv/
 reports/
 .env
+.env.*
+!.env.example

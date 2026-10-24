@@ -99,7 +99,7 @@ class CareerTests(unittest.TestCase):
     def test_cli_creates_readable_reports(self):
         with tempfile.TemporaryDirectory() as tmp:
             base = str(Path(tmp)/'report')
-            with patch('sys.argv', ['career_finder.py', '--output', base]):
+            with patch('sys.argv', ['career_finder.py', '--no-ai', '--output', base]):
                 self.assertEqual(cf.main(), 0)
             for ext in ('html','md','json'):
                 self.assertTrue(Path(base+'.'+ext).is_file())
