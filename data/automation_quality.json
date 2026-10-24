@@ -1,0 +1,416 @@
+{
+  "checked_on": "2026-10-24",
+  "scope": "流程工业自动化 × 客户质量工程",
+  "sources": [
+    {
+      "id": "supcon-dcs",
+      "title": "Distributed Control Systems for Critical Process Operations",
+      "title_zh": "关键流程操作的集散控制系统",
+      "organization": "SUPCON",
+      "url": "https://www.global.supcon.com/control-safety-systems/dcs",
+      "category": "企业与机构官网",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Supports operator stations, engineering stations, historian, OPC, AMS, and controller/I/O networks.",
+      "excerpt_zh": "支持操作员站、工程师站、历史数据库、OPC、AMS，以及控制器／I/O 网络。"
+    },
+    {
+      "id": "supcon-sis",
+      "title": "TCS-900",
+      "title_zh": "TCS-900 安全仪表系统",
+      "organization": "SUPCON",
+      "url": "https://www.global.supcon.com/control-safety-systems/sis",
+      "category": "企业与机构官网",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Safety Instrumented System (SIS)",
+      "excerpt_zh": "安全仪表系统（SIS）"
+    },
+    {
+      "id": "asq-8d",
+      "title": "Eight Disciplines 8D",
+      "title_zh": "八项纪律（8D）",
+      "organization": "ASQ",
+      "url": "https://asq.org/quality-resources/eight-disciplines-8d",
+      "category": "标准与监管机构",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "D3: Develop and execute an interim containment plan",
+      "excerpt_zh": "D3：制定并执行临时遏制计划"
+    },
+    {
+      "id": "asq-cqe",
+      "title": "Certified Quality Engineer (CQE) Certification",
+      "title_zh": "注册质量工程师（CQE）认证",
+      "organization": "ASQ",
+      "url": "https://www.asq.org/cert/quality-engineer",
+      "category": "标准与监管机构",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Quality Engineer Certification CQE",
+      "excerpt_zh": "质量工程师认证 CQE"
+    },
+    {
+      "id": "asq-gb",
+      "title": "Six Sigma Green Belt Certification CSSGB",
+      "title_zh": "六西格玛绿带认证 CSSGB",
+      "organization": "ASQ",
+      "url": "https://www.asq.org/cert/six-sigma-green-belt",
+      "category": "标准与监管机构",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Educational waivers are not granted for this exam.",
+      "excerpt_zh": "本考试不提供学历年限豁免。"
+    },
+    {
+      "id": "iso9001",
+      "title": "ISO 9001:2026",
+      "title_zh": "ISO 9001:2026 质量管理体系",
+      "organization": "ISO",
+      "url": "https://www.iso.org/standard/9001",
+      "category": "标准与监管机构",
+      "access": "公开介绍；标准全文付费",
+      "published": "2026",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Quality management systems — Requirements",
+      "excerpt_zh": "质量管理体系——要求"
+    },
+    {
+      "id": "iec61511",
+      "title": "IEC 61511-1:2016 RLV",
+      "title_zh": "IEC 61511-1:2016 红线版本",
+      "organization": "IEC",
+      "url": "https://webstore.iec.ch/en/publication/24237",
+      "category": "标准与监管机构",
+      "access": "公开介绍；标准全文付费",
+      "published": "2016",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Safety instrumented systems for the process industry sector",
+      "excerpt_zh": "流程工业领域的安全仪表系统"
+    },
+    {
+      "id": "nist-ot",
+      "title": "Guide to Operational Technology (OT) Security",
+      "title_zh": "运行技术（OT）安全指南",
+      "organization": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "category": "标准与监管机构",
+      "access": "公开介绍和全文",
+      "published": "2023-09",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "Date Published: September 2023",
+      "excerpt_zh": "发布日期：2023 年 9 月"
+    },
+    {
+      "id": "isa-faq",
+      "title": "Certificate Programs Frequently Asked Questions",
+      "title_zh": "证书项目常见问题",
+      "organization": "ISA",
+      "url": "https://www.isa.org/certification/certificate-programs/certificate-programs-faqs",
+      "category": "标准与监管机构",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "ISA/IEC 62443 Cybersecurity Fundamentals Specialist",
+      "excerpt_zh": "ISA/IEC 62443 网络安全基础专员"
+    },
+    {
+      "id": "tuv-fs",
+      "title": "FS Engineer",
+      "title_zh": "功能安全工程师",
+      "organization": "TÜV Rheinland",
+      "url": "https://www.tuv.com/landingpage/en/training-functional-safety-cyber-security/detail-pages/zertifikate/fs-engineer.html",
+      "category": "企业与机构官网",
+      "access": "全文可访问",
+      "published": "页面未标明",
+      "verified_at": "2026-10-24",
+      "verification": "人工打开原始页面核实",
+      "excerpt": "The certificate is valid for 5 years.",
+      "excerpt_zh": "证书有效期为 5 年。"
+    }
+  ],
+  "modules": [
+    {
+      "id": "complaints",
+      "title": "客户投诉与现场问题闭环",
+      "priority": "基础优先",
+      "topics": [
+        "客户需求与质量问题分级",
+        "8D、临时遏制、5 Why、鱼骨图",
+        "发生根因与逃逸原因分别验证",
+        "纠正措施、效果验证与防复发"
+      ],
+      "deliverable": "用一个脱敏案例完成：现象→证据→遏制→复现→根因→措施→验证→关闭，并列明责任人与证据。",
+      "source_ids": [
+        "asq-8d",
+        "iso9001"
+      ],
+      "focus": [
+        "complaints"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "systems",
+      "title": "控制系统与流程工业基础",
+      "priority": "基础优先",
+      "topics": [
+        "流程图/P&ID、测点与控制回路、PID基础",
+        "DCS：控制器、I/O、工程师站、操作站、历史库",
+        "冗余、电源、接地、通信与故障定位",
+        "Modbus、OPC、HART 等接口及诊断边界"
+      ],
+      "deliverable": "绘制从现场仪表到 I/O、控制器、操作站的系统图，标注一次客户故障可能经过的链路。",
+      "source_ids": [
+        "supcon-dcs"
+      ],
+      "focus": [
+        "complaints",
+        "hardware",
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "hardware",
+      "title": "硬件可靠性与失效分析",
+      "priority": "岗位主线",
+      "topics": [
+        "失效模式分类、FMEA/FMECA 的使用边界",
+        "电源、接地、连接器、I/O、环境与 EMC 排查",
+        "序列号、批次、BOM/版本及现场条件追溯",
+        "复现试验、对照样本、可靠性数据与试验结论"
+      ],
+      "deliverable": "输出脱敏失效分析报告，明确样本量、复现条件、排除项和未证实假设。",
+      "source_ids": [
+        "asq-cqe",
+        "supcon-sis"
+      ],
+      "focus": [
+        "hardware"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "software",
+      "title": "软件、系统交付与变更质量",
+      "priority": "岗位主线",
+      "topics": [
+        "需求与测试可追溯、缺陷复现与日志时间线",
+        "组态/固件/软件版本、兼容性与配置基线",
+        "FAT/SAT 验收证据与回归验证",
+        "变更审批、影响分析、回退方案与问题闭环"
+      ],
+      "deliverable": "为一个历史软件／交付问题建立“需求→版本→测试→缺陷→修复→回归”的证据链。",
+      "source_ids": [
+        "asq-cqe",
+        "supcon-dcs",
+        "iec61511"
+      ],
+      "focus": [
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "statistics",
+      "title": "质量统计与改进",
+      "priority": "跨主线工具",
+      "topics": [
+        "Pareto 分层与问题口径统一",
+        "测量系统与数据质量、MSA 基础",
+        "SPC、过程能力的适用前提",
+        "DMAIC、假设检验和 DOE 基础"
+      ],
+      "deliverable": "用脱敏质量数据定义指标、分层并验证一项改进；小样本与混合总体时不硬算能力指数。",
+      "source_ids": [
+        "asq-gb",
+        "asq-cqe"
+      ],
+      "focus": [
+        "complaints",
+        "hardware",
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "safety",
+      "title": "SIS 与功能安全",
+      "priority": "按项目深入",
+      "topics": [
+        "DCS 与 SIS 的作用边界",
+        "IEC 61508/61511、安全生命周期与 SRS",
+        "SIL 概念、证明试验与变更影响",
+        "安全相关缺陷的升级和授权处理边界"
+      ],
+      "deliverable": "能识别哪些故障涉及安全功能，并提交给获授权的功能安全负责人评估；不自行批准安全变更。",
+      "source_ids": [
+        "supcon-sis",
+        "iec61511"
+      ],
+      "focus": [
+        "hardware",
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "ot",
+      "title": "OT 网络与安全质量",
+      "priority": "按项目深入",
+      "topics": [
+        "资产与网络拓扑、分区与通道",
+        "远程访问、补丁、备份和恢复验证",
+        "漏洞与产品缺陷的区别及通报",
+        "IEC 62443 与 NIST OT 安全指南的阅读路径"
+      ],
+      "deliverable": "为一套脱敏系统制作资产清单、网络图和备份恢复验证清单。",
+      "source_ids": [
+        "nist-ot",
+        "isa-faq"
+      ],
+      "focus": [
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    },
+    {
+      "id": "qms",
+      "title": "质量体系与跨部门协作",
+      "priority": "贯穿全程",
+      "topics": [
+        "ISO 9001 过程方法、客户要求与不合格控制",
+        "质量记录、纠正措施、内审基础",
+        "研发、制造、交付与售后的责任和升级接口",
+        "供应商/批次问题与客户影响范围追溯"
+      ],
+      "deliverable": "将一次客诉映射到实际内部流程，标记需要补齐的记录和控制点。",
+      "source_ids": [
+        "iso9001",
+        "asq-8d"
+      ],
+      "focus": [
+        "complaints",
+        "hardware",
+        "software"
+      ],
+      "basis": "编辑建议：根据用户岗位与公开资料推导；不是中控内部任职要求。"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "asq-cqe",
+      "name": "ASQ Certified Quality Engineer（CQE）",
+      "issuer": "ASQ",
+      "kind": "专业机构个人认证",
+      "priority": "质量方法长期主线",
+      "use_when": "希望系统覆盖质量工程、可靠性、统计和质量体系，且满足报名经验要求。",
+      "requirements": "8 年相关全职有偿经验，其中至少 3 年决策岗位经验；本科可减免 4 年总经验，硕博可减免 5 年。学历减免不能自动替代决策经验。",
+      "eligibility": "未知：尚未提供学历和相关经验；不判断可直接报考。",
+      "source_ids": [
+        "asq-cqe"
+      ],
+      "focus": [
+        "complaints",
+        "hardware",
+        "software"
+      ],
+      "caution": "此处 CQE 是 Certified Quality Engineer，不是 Customer Quality Engineer 岗位；不是中国国家职业资格。"
+    },
+    {
+      "id": "asq-gb",
+      "name": "ASQ Certified Six Sigma Green Belt（CSSGB）",
+      "issuer": "ASQ",
+      "kind": "专业机构个人认证",
+      "priority": "有改进项目时优先考虑",
+      "use_when": "已有能量化基线和改进效果的真实质量项目，准备学习 DMAIC 和统计方法。",
+      "requirements": "至少 3 年知识体系相关全职有偿经验，无学历年限豁免。",
+      "eligibility": "未知：相关经验未提供。",
+      "source_ids": [
+        "asq-gb"
+      ],
+      "focus": [
+        "complaints",
+        "hardware",
+        "software"
+      ],
+      "caution": "可以先按大纲学习；不因工作需要就假定满足报考条件。"
+    },
+    {
+      "id": "tuv-sis",
+      "name": "FS Engineer（TÜV Rheinland）— SIS 方向",
+      "issuer": "TÜV Rheinland",
+      "kind": "机构专项培训、考试及经验审核证书",
+      "priority": "参与 SIS／安全相关质量问题时考虑",
+      "use_when": "实际承担 SIS 产品或工程的安全相关质量任务。",
+      "requirements": "完整培训并通过考试；工程学历，或 SIS/PH&RA 方向按官网规定证明同等工程责任；至少 3 年功能安全实践。证书有效期 5 年。",
+      "eligibility": "未知：功能安全经验未提供；普通 CQE 年限不能直接等同。",
+      "source_ids": [
+        "tuv-fs"
+      ],
+      "focus": [
+        "hardware",
+        "software"
+      ],
+      "caution": "选择 SIS／IEC 61511 或实际工作对应范围；不同 TÜV 机构项目互不等同，不混同汽车 ISO 26262。"
+    },
+    {
+      "id": "isa-sis",
+      "name": "ISA/IEC 61511 SIS Fundamentals Specialist（EC50）",
+      "issuer": "ISA",
+      "kind": "完成指定课程并考试的专项能力证书",
+      "priority": "SIS 基础学习备选",
+      "use_when": "需要建立流程工业 SIS 生命周期基础，且课程语言与成本合适。",
+      "requirements": "参加对应 ISA 课程并通过证书考试；基础证书是后续专项考试的前置条件。",
+      "eligibility": "需确认课程安排、授课语言及当地考试可用性。",
+      "source_ids": [
+        "isa-faq"
+      ],
+      "focus": [
+        "hardware",
+        "software"
+      ],
+      "caution": "属于 ISA certificate program，不等同于企业 SIL 产品认证或法定执业资格。"
+    },
+    {
+      "id": "isa-ot",
+      "name": "ISA/IEC 62443 Cybersecurity Fundamentals Specialist（IC32）",
+      "issuer": "ISA",
+      "kind": "完成指定课程并考试的专项能力证书",
+      "priority": "涉及 OT 安全再考虑",
+      "use_when": "客户问题涉及控制网络、远程维护、漏洞或工业信息安全要求。",
+      "requirements": "参加对应 ISA 课程并通过证书考试；基础证书是后续专项考试的前置条件。",
+      "eligibility": "需确认课程安排、授课语言及当地考试可用性。",
+      "source_ids": [
+        "isa-faq"
+      ],
+      "focus": [
+        "software"
+      ],
+      "caution": "与个人工业网络安全能力有关，不是产品 IEC 62443 认证；非所有 CQE 都应优先考。"
+    }
+  ],
+  "pending": [
+    {
+      "name": "中国质量协会六西格玛绿带能力评价",
+      "url": "https://qpp.caq.org.cn/activity-dynamic/ablt",
+      "status": "原页为动态页面，当前未读取到完整报考指南；不纳入已核验证书排序。",
+      "next_check": "核对当年理论考试、实践评价、证书类型、费用及用人单位认可情况。"
+    }
+  ]
+}
